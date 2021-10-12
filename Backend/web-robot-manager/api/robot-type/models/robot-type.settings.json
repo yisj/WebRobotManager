@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "robot_types",
+  "info": {
+    "name": "RobotType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "robot_type": {
+      "type": "string",
+      "unique": true
+    },
+    "nickname": {
+      "type": "string"
+    }
+  }
+}

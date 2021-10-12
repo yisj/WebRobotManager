@@ -1,0 +1,22 @@
+{
+  "routes": [
+
+    {
+      "method": "PUT",
+      "path": "/reset-jwt",
+      "handler": "UsersPermissions.resetJwt",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/check-jwt",
+      "handler": "UsersPermissions.checkJwt",
+      "config": {
+        "policies": []
+      }
+    }
+
+  ]
+}

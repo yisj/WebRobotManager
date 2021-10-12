@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "function_lists",
+  "info": {
+    "name": "FunctionList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "function_name": {
+      "type": "string",
+      "unique": true
+    },
+    "function_info": {
+      "type": "text"
+    }
+  }
+}

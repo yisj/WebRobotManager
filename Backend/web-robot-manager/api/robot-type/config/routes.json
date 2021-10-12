@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/robot-types",
+      "handler": "robot-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/robot-types/count",
+      "handler": "robot-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/robot-types/:id",
+      "handler": "robot-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/robot-types",
+      "handler": "robot-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/robot-types/:id",
+      "handler": "robot-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/robot-types/:id",
+      "handler": "robot-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "robot_lists",
+  "info": {
+    "name": "RobotList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "robot_id": {
+      "type": "string",
+      "unique": true
+    },
+    "robot_type": {
+      "model": "robot-type"
+    },
+    "robot_status": {
+      "type": "enumeration",
+      "enum": [
+        "Offline",
+        "Running",
+        "Waiting"
+      ],
+      "default": "Offline",
+      "required": true
+    },
+    "site": {
+      "model": "site-list",
+      "via": "robot_list"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "robot_uuid": {
+      "type": "string",
+      "private": false,
+      "unique": true,
+      "required": true
+    },
+    "using_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "using_robot_agent"
+    }
+  }
+}

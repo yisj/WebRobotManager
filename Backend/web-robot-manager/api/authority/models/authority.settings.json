@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authorities",
+  "info": {
+    "name": "Authority",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "authority_type": {
+      "type": "string",
+      "unique": true
+    },
+    "function_list": {
+      "collection": "function-list"
+    }
+  }
+}

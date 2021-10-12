@@ -1,0 +1,124 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/robot-lists",
+      "handler": "robot-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/robot-by-uuid",
+      "handler": "robot-list.findOneByUuid",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/unregistered-robot-list",
+      "handler": "robot-list.findUnregisteredRobotsUuid",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registered-robot-list",
+      "handler": "robot-list.findRegisteredRobotsUuid",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/robot-lists-in-site",
+      "handler": "robot-list.findRobotInSite",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/robot-lists-no-site",
+      "handler": "robot-list.findNoSite",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/robot-lists/count",
+      "handler": "robot-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/robot-lists/:id",
+      "handler": "robot-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/robot-lists",
+      "handler": "robot-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/robot-lists/:id",
+      "handler": "robot-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/robot-lists/register",
+      "handler": "robot-list.register",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/robot-lists/connection",
+      "handler": "robot-list.connectionRobot",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/robot-lists/disconnection",
+      "handler": "robot-list.disconnectionRobot",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/robot-online",
+      "handler": "robot-list.online",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/robot-lists/:id",
+      "handler": "robot-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

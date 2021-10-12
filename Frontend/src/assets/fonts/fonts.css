@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'HDharmonyL';
+    src: url("./HDharmonyL.ttf") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HDharmonyM';
+    src: url("./HDharmonyM.ttf") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'HDharmonyB';
+    src: url("./HDharmonyB.ttf") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

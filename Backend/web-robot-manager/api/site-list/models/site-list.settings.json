@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_lists",
+  "info": {
+    "name": "SiteList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site_info": {
+      "type": "text"
+    },
+    "site_image_file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "site_name": {
+      "type": "string"
+    },
+    "robot_list": {
+      "via": "site",
+      "collection": "robot-list"
+    },
+    "editing_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "editing_site_name"
+    },
+    "site_yaml_file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "first_uploaded_by": {
+      "type": "string"
+    },
+    "origin_map_name": {
+      "type": "string"
+    }
+  }
+}
